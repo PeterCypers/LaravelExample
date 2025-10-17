@@ -1,0 +1,15 @@
+php artisen serve doesn't work, so I use:
+php -S localhost:8000 -t public
+
+
+
+it's all that's needed to see the views from the guide,
+
+there is also:
+npm run dev
+
+this is ran in a seperate terminal from the previous command and should be the hot module replacement front-end (with vite) server
+
+
+useful command to see where all the path variables are pointing to:
+$env:PATH -split ";"
