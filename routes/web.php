@@ -4,7 +4,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // return view('welcome');
-    return view('home');
+    // passing a list of variables as 2nd argument
+    return view('home', [
+        'greeting' => 'Hello', // $greeting
+        'name' => 'Larry Robot'
+    ]);
 });
 
 Route::get('/about', function () {
